@@ -1,0 +1,274 @@
+body {
+	font-family: "Arial Narrow", Arial, sans-serif;
+	margin:0;
+	color: #cccccc;
+	background: #F4F1F1;
+}
+
+/* Layout -------------------------------------------------*/
+
+h3{
+	display: inline;
+	padding: 0.5em 1.25em 0.75em 0.5em;
+	width: 110px;
+	/*background: #C2E1FF;*/
+	margin-top: 5px;
+	color: #103a63;
+	border-radius: 0 0 38px 0;
+	border-right: 2px solid #C2E1FF;
+  	border-bottom: 2px solid #C2E1FF; 
+	/*border-right: 2px solid rgba(25, 22, 21, 0.74);
+	/*box-shadow: 2px 1px 1px #f4f4f4;*/
+}
+
+header {
+
+	width:75%;
+	max-width: 1140px;
+	padding: 0.5em 0.5em;
+	margin: 0 auto;
+	letter-spacing:0.001em;
+}
+
+span{
+	font-weight: bold;
+	color: #103a63;
+	line-height:1.3;
+}
+
+.bioimg {
+	border-radius: 50%;
+	padding: 1em;
+	width: 153px;
+	height: 160px;
+	margin:0 auto;
+	display:block;
+}
+
+footer{
+	background: #103a63;
+	width: 100%;
+/*	max-width: 1140px;
+*/	margin: 0 auto;
+	/*color: #999999;*/
+}
+
+hr{
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #C2E1FF;
+		border: none;
+		margin-top: 5px;
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+
+a{
+	text-decoration: none;
+	color: #103a63;
+	transition: all ease-in-out 0.3s;	
+}
+a:hover{
+	color: #CC4541;
+
+}
+
+.wrapper {
+	/*max-width: 1140px;*/
+	margin: 0 auto;
+	background: #F4F1F1;
+	width: 100%;
+}
+
+
+.name {
+	font-size: 3em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	margin: 0 auto;
+	color: #71B3F5;
+}
+
+.occupation {
+	display: inline;
+	font-size: 1.2em;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 25px;
+	padding: 1px;
+	color: #103a63;
+	border-top: 2px solid #103a63;
+	/*margin:0 auto;*/
+}
+
+.container{
+	background: #ffffff;
+	color: #103a63;
+	width: 100%;
+	/*max-width: 1140px;*/
+	margin:0 auto;
+/*	border-radius:0 150px 0 0;*/
+}
+
+
+.header-lb{
+	display: flex;
+	justify-content: left;
+	border: 0;
+	width: 100%;
+}
+
+.float{
+	/*border-top: 2px solid #71B3F5;*/
+	/*padding: 0;
+	margin: 0 auto;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  
+  	-webkit-flex-flow: row wrap;
+	flex-flow: row-wrap;
+	justify-content: space-around;*/
+}
+
+.statement{
+	margin: 0 auto;
+	display: inline;
+	
+}
+
+.statement p{
+	display: inline;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row-wrap;
+}
+
+.details{
+	min-width: 250px;
+	margin: 0 auto;
+	padding: 0 0 0 1.25em;
+}
+
+.personal-details{
+	padding: 0;
+}
+
+.skills{
+	padding: 1%;
+	width: 75%;
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.curve{
+	position: absolute;
+	left: 0;
+	top: 400px;
+	height: 400px;
+	width: 400px;
+	z-index: -10;
+	background-color: #103a63;
+}
+
+/* block layout ------------------------------*/
+
+.blocks{
+	padding: 1em;
+	width: 75%;
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.blocks-f{
+	padding: 1em;
+	width: 75%;
+	margin: 0 auto;
+	max-width: 1140px;
+	color: #ffffff;
+}
+
+.about-f{
+	color: #ffffff;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+/*media queries --------------------------*/
+
+@media screen and (min-width: 800px){
+	.personal-details{
+		list-style: none;
+		display: flex;
+		display: -webkit-box;
+  		display: -moz-box;
+  		display: -ms-flexbox;
+  		display: -webkit-flex;
+		justify-content: space-between;
+	}
+
+	.personal-details li{
+		margin-right: 1em;
+	}
+
+	.container{
+		border-radius:0 150px 0 150px; 
+	}
+}
+
+
+@media screen and (min-width: 550px){	
+
+	.float{
+		/*padding: 0;
+		margin: 0;
+		display: flex;
+		display: -webkit-box;
+  		display: -moz-box;
+  		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		justify-content: space-between;
+  		flex-direction: column;*/
+	}
+
+	.bioimg {
+	float:left;
+	margin:0;
+	display:inline;
+	}
+
+	.statement{
+		margin: 0 auto;
+	}
+
+	/*hr{
+		display: block;
+		width: 75%;
+		height: 2px;
+		background-color: #C2E1FF;
+		border: none;
+		margin-top: 5px;
+		padding-right: 0px;
+		margin-right: 0px;
+	}*/
+}
+
+
+@media screen and (min-width: 460px){
+	.name {
+	font-size: 5em;
+	}
+}
+
